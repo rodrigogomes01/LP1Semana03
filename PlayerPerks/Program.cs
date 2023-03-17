@@ -53,6 +53,10 @@ namespace PlayerPerks
                 {
                 Console.WriteLine("Silent jumper");
                 }
+                ///If the player doesn't have AutoHeal
+                if ((P1Perks & Perks.AutoHeal) != (Perks.AutoHeal))
+                {
+                    Console.WriteLine("Not gonna make it!");
             }
         }
     }
