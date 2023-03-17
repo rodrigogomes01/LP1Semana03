@@ -35,14 +35,16 @@ namespace PlayerPerks
                 }
             }
 
-            Console.WriteLine(P1Perks);
-
             ///Check the player's perks
             if (PerkNotValid)
             {
                 Console.WriteLine("Perk Unknown");
             }
-            else
+            if (P1Perks == 0)
+            {
+                Console.WriteLine("No perks");
+            }
+            if (PerkNotValid == false)
             {
                 Console.WriteLine(P1Perks);
             }
