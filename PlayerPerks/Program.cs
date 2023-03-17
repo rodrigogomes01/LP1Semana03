@@ -44,10 +44,15 @@ namespace PlayerPerks
             {
                 Console.WriteLine("No perks");
             }
-            if (PerkNotValid == false)
+             if (!PerkNotValid & P1Perks != 0)
             {
-                Console.WriteLine(P1Perks);
+                 Console.WriteLine(P1Perks);
+
+                ///Check f the player has Stealth and Double jump perks
+                if ((P1Perks & (Perks.Stealth & Perks.DoubleJump)) == (Perks.Stealth & Perks.DoubleJump))
+                {
+                Console.WriteLine("Silent jumper");
+                }
             }
         }
     }
-}
